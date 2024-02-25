@@ -1,16 +1,9 @@
 import './App.css';
-import Mybutton from './Button';
+import Mybutton from './components/buttons/Button';
+import MyForm from './components/forms/Form';
 function App() {
   return (
-  <div>
-    <div>
-      <h1>Hello</h1>
-    </div>
-    <img src="https://i.imgur.com/MK3eW3As.jpg" alt="oiii"></img>
-    <Mybutton />
-  </div>
-
-
+    <MyForm></MyForm>
   );
 }
 
