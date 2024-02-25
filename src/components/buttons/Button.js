@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
-function Mybutton(){
+function Mybutton() {
 
     const [showDiv, setShowDiv] = useState(false);
 
     const toggleDiv = () => {
         setShowDiv(!showDiv)
     }
-    return(
+    return (
 
         <div>
             <button onClick={toggleDiv}>Olá</button>

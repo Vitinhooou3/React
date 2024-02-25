@@ -1,6 +1,6 @@
-export function ButtonSubmit({label}) {
-    return(
-        <div> 
+export function ButtonSubmit({ label }) {
+    return (
+        <div>
             <button type="submit">{label}</button>
         </div>
     )
