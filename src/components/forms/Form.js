@@ -1,10 +1,11 @@
 import { useState } from "react"
+import ButtonSubmit from "./ButtonSubmit";
 
 function MyForm() {
     //model do form
     const [formularioRegistro, setFormularioRegistroState] = useState({
         nome:'',
-        age: 0,
+        age: '',
         email: '',
 
     });
@@ -30,9 +31,8 @@ function MyForm() {
     };
 
     const handleSubmit = (event) => {
-        event.preventDefault(); // Prevents form from causing a page refresh
-        console.log(formularioRegistro); // Logs the current state to the console
-        // You can add more logic here to handle form submission, like sending data to an API
+        event.preventDefault();
+        console.log(formularioRegistro);
     };
 
     return(
@@ -56,7 +56,7 @@ function MyForm() {
                 onChange={handleChange}/>
             </div>
             <div>
-                {isFormularioValido() && <button type="submit"> concluir</button>}
+                {isFormularioValido() && <ButtonSubmit label={"conclude"}/>}
             </div>
         </form>
     )
